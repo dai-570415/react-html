@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebSite in React</title>
+</head>
+<body>
+    <div class="container">
+        <header id="header"></header>
+        <main>
+            通常のHTML
+        </main>
+        <footer id="footer"></footer>
+    </div>
+
+    <!-- $ ./node_modules/.bin/webpack -->
+    <!-- $ ./node_modules/.bin/webpack-dev-server -->
+
+    <!-- ローカルサーバーで動かす場合 -->
+    <!-- <script src="header.bundle.js" charset="utf-8"></script>
+    <script src="footer.bundle.js" charset="utf-8"></script> -->
+
+    <!-- 実際にWebサイトに埋め込む時はそのままpathを指定 -->
+    <script src="./dist/header.bundle.js" charset="utf-8"></script>
+    <script src="./dist/footer.bundle.js" charset="utf-8"></script>
+</body>
+</html>
