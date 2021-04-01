@@ -1,0 +1,16 @@
+.smoothScroll {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transform: translateY(30px);
+          transform: translateY(30px);
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.smoothScroll.is-show {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+}
+/*# sourceMappingURL=smooth.css.map */

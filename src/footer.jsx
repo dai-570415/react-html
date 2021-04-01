@@ -1,10 +1,11 @@
 import React from 'react';
 import { render } from 'react-dom';
+import footerStyle from './css/footer.scss';
 
 const Footer = () => {
     return (
         <>
-            <p>Copyright</p>
+            <p className={footerStyle.copy}>Copyright</p>
         </>
     );
 }

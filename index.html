@@ -1,22 +1,30 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WebSite in React</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:title" content="">
+    <meta property="og:type" content="">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+    <meta name="theme-color" content="#333">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="apple-touch-icon" href="./meta/icon.png">
+    <link rel="shortcut icon" href="./meta/favicon.ico">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/smooth.css">
 </head>
 <body>
     <div class="container">
         <header id="header"></header>
         <main>
-            通常のHTML
+            <div class="smoothScroll">Hello World!</div>
         </main>
         <footer id="footer"></footer>
     </div>
-
-    <!-- $ ./node_modules/.bin/webpack -->
-    <!-- $ ./node_modules/.bin/webpack-dev-server -->
 
     <!-- ローカルサーバーで動かす場合 -->
     <!-- <script src="header.bundle.js" charset="utf-8"></script>
@@ -25,5 +33,12 @@
     <!-- 実際にWebサイトに埋め込む時はそのままpathを指定 -->
     <script src="./dist/header.bundle.js" charset="utf-8"></script>
     <script src="./dist/footer.bundle.js" charset="utf-8"></script>
+    
+    <!-- 通常のJS -->
+    <script src="./js/main.js"></script>
 </body>
 </html>
+
+<!-- コマンド -->
+<!-- $ ./node_modules/.bin/webpack -->
+<!-- $ ./node_modules/.bin/webpack-dev-server -->

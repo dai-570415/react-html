@@ -6,8 +6,8 @@ const src  = path.resolve(__dirname, 'src');
 const dist = path.resolve(__dirname, 'dist');
 
 module.exports = {
-  mode: 'development',
-//  mode: "production",
+  // mode: 'development',
+  mode: "production",
 
     entry: {
       header: src + '/header.jsx',
@@ -34,7 +34,20 @@ module.exports = {
               }
             }
           ]        
-      }
+      },
+      {
+        test: /\.scss$/,
+        use: [
+          'style-loader',
+          {
+            loader: 'css-loader',
+            options :{
+              modules : true
+            }
+          },
+          'postcss-loader','sass-loader'
+        ],
+      },
     ]
   },
   resolve: {

@@ -1,0 +1,11 @@
+.smoothScroll {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(30px);
+    transition: all 1s;
+}
+.smoothScroll.is-show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0px);
+}
